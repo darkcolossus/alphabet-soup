@@ -12,3 +12,10 @@ $ go run main.go
 $ cd tests
 $ go test -v
 ```
+
+## Run docker image
+
+``` bash
+$ sudo docker build -t home_test .
+$ sudo docker run -it home_test
+```
