@@ -22,5 +22,3 @@ func main() {
 
 	ls.Generate(f, c, term)
 }
-
-

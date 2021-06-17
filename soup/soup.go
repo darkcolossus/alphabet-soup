@@ -37,8 +37,6 @@ func (ls *LetterSoup) FillInM() {
 }
 
 // Search term.
-
-
 func (ls *LetterSoup) SearchTerm() {
 	if ls.F >= 3 && ls.C >= 3 {
 		for i := 0; i < ls.F; i++ {
@@ -213,7 +211,8 @@ func (ls *LetterSoup) Generate(f int, c int, term string) int {
 }
 
 // English Letter Frequency (based on a sample of 40,000 words).
-var freqLetters = []rune { 'E', 'T', 'A', 'O', 'I', 'N', 'S', 'R', 'H', 'D', 'L', 'U', 'C', 'M', 'F', 'Y', 'W', 'G', 'P', 'B', 'V', 'K', 'Q', 'J', 'Z'}
+var freqLetters = []rune { 'E', 'T', 'A', 'O', 'I', 'N', 'S', 'R', 'H',
+		 'D', 'L', 'U', 'C', 'M', 'F', 'Y', 'W', 'G', 'P', 'B', 'V', 'K', 'Q', 'J', 'Z'}
 const HalfHigherFreq = 0.834
 const HalfHighestFreq = 0.5746
 
